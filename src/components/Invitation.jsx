@@ -62,7 +62,7 @@ export default function Invitation() {
             </div>
             <div className="bridegroom">
               <h2>Chi. {hero.name}</h2>
-              <p>S/o the former and grandson of</p>
+              <p>S/o the latter and grandson of</p>
               <p>
                 {hero.paternalGrandParents[0]} & {hero.paternalGrandParents[1]}
               </p>
