@@ -1,0 +1,26 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div.side {
+    display: flex;
+    gap: 0 4vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    div.side {
+      display: flex;
+      flex-direction: column;
+      gap: 0 4vh;
+      justify-content: left;
+      align-items: start;
+    }
+  }
+}

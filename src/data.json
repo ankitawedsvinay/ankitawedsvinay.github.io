@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "name": "Vinay Krishna G.",
+    "maternalGrandParents": ["late Smt. Chandravathy", "late Sri. Dasa Shenoy"],
+    "paternalGrandParents": ["Smt. Vilasini", "Sri. V. Ramachandra Bhat"],
+    "parents": ["Ajitha R. ", " Gopalakrishnan N. D."],
+    "address": [
+      "Layam, Thirumalabhagom",
+      "Thuravoor, Alappuzha Dist.",
+      "688540"
+    ],
+    "phone": "9447873464"
+  },
+  "heroine": {
+    "name": "Ankita S. Naik",
+    "maternalGrandParents": [
+      "Smt. T. J. Rethnakumari",
+      "Sri. V. Upendra Shenoy"
+    ],
+    "paternalGrandParents": [
+      "late Smt. Vasantha G. Naik",
+      "late Sri. V. Govind Naik"
+    ],
+    "parents": ["Bindu S. Naik", "Sundaresh G. Naik"],
+    "phone": "9895560999",
+    "address": [
+      "Ganesh Kripa, VSB Gardens, Thirumalabhagom",
+      "Thuravoor, Alappuzha Dist.",
+      "688540"
+    ]
+  },
+  "event": {
+    "date": "2025-01-19",
+    "time": ["11:30 AM", "12:30 PM"],
+    "muhurtham": "(Abhijith Lagnam)",
+    "location": "SS Kalamandir, Thuravoor"
+  },
+  "footer": {
+    "people": ["Alok", "Reshma", "Vignesh"]
+  }
+}
