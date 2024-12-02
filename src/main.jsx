@@ -1,6 +1,6 @@
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import { WeddingDataProvider } from "./context/WeddingDataContext.jsx";
@@ -42,14 +42,21 @@ const RootComponent = () => {
   }
 
   return (
-    <HashRouter>
-      <WeddingDataProvider>
-        <App />
-      </WeddingDataProvider>
-    </HashRouter>
+    <WeddingDataProvider>
+      <RouterProvider router={router} />
+    </WeddingDataProvider>
   );
 };
 
+// Define the routes for the application
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  },
+]);
+
+// Render the root component
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RootComponent />
