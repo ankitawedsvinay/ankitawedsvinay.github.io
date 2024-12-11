@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/static/DancingScript-Bold.ttf") format("truetype");
+}
+.sangeeth {
+  background-image: url("/assets/Sangeet.png");
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  height: 150vw;
+  width: 100vw;
+  .dancingscript {
+    font-family: "Dancing Script", cursive;
+  }
+  .invitation-sangeeth hr.solid {
+    border-top: 0.25vw solid #333;
+    width: 100%;
+  }
+  div.seperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vw;
+  }
+
+  div.invitation-sangeeth {
+    padding-top: 20vw ;
+    overflow: hidden;
+    padding-left: 40vw;
+    padding-right: 10vw;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    color: #333;
+    text-align: center;
+  }
+
+  .invitation-sangeeth div.content {
+    margin: 5vw 0;
+  }
+
+  .invitation-sangeeth div.family {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .invitation-sangeeth div.title {
+    text-align: center;
+  }
+
+  .invitation-sangeeth div.side {
+    display: flex;
+    gap: 0 2vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .invitation-sangeeth div.bridegroom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 0 0;
+  }
+  .invitation-sangeeth h1 {
+    font-size: 5vw; /* Increased from 4vw */
+  }
+
+  .invitation-sangeeth h2 {
+    font-size: 4.5vw; /* Increased from 3.5vw */
+  }
+
+  .invitation-sangeeth h3 {
+    font-size: 4vw; /* Increased from 3vw */
+  }
+
+  .invitation-sangeeth h4 {
+    font-size: 3.5vw; /* Increased from 2.5vw */
+  }
+
+  .invitation-sangeeth h5 {
+    font-size: 3vw; /* Increased from 2vw */
+  }
+
+  .invitation-sangeeth p {
+    font-size: 2.5vw; /* Increased from 2vw */
+  }
+}

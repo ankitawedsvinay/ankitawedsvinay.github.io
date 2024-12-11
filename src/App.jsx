@@ -1,35 +1,69 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import WeddingDetails from "./components/WeddingDetails";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
+import Countdown from "./components/Countdown";
+import Invitation from "./components/Invitation";
+import Map from "./components/Map";
+import SangeethInvite from "./components/SangeethInvite";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [route, setRoute] = useState(window.location.pathname);
+
+  const navigateTo = (path) => {
+    window.history.pushState({}, "", path);
+    setRoute(path);
+    window.scrollTo(0, 0); // Reset scroll position when navigating
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setRoute(window.location.pathname);
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
+  const renderRoute = () => {
+    switch (route) {
+      case "/":
+        return (
+          <>
+            <div id="home" className="section hero-section">
+              <HeroSection />
+            </div>
+            <div id="details" className="section">
+              <Countdown />
+              <WeddingDetails />
+            </div>
+            <div id="contact" className="section">
+              <ContactUs />
+            </div>
+          </>
+        );
+      case "/invitation":
+        return <Invitation />;
+      case "/viewmap":
+        return <Map />;
+      case "/SangeethCeremony":
+        return <SangeethInvite />;
+      default:
+        return <h1>404 - Page Not Found</h1>;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app">
+      <Navbar />
+      {renderRoute()}
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,95 @@
+.invitation-card hr.solid {
+  border-top: 0.25vw solid maroon;
+  width: 100%;
+}
+
+.invitation-card img.title-image {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+div.invitation-card {
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/card-cover.png");
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: lighten;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: maroon;
+  text-align: center;
+}
+
+.invitation-card div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.invitation-card div.family {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-card div.title {
+  text-align: center;
+}
+
+.invitation-card div.side {
+  display: flex;
+  gap: 0 4vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-card div.bridegroom {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.invitation-card div.bridegroom h2 {
+  color: 800000;
+}
+
+.invitation-card h1 {
+  font-size: 4vw;
+}
+
+.invitation-card h2 {
+  font-size: 3.5vw;
+}
+
+.invitation-card h3 {
+  font-size: 3vw;
+}
+
+.invitation-card h4 {
+  font-size: 2.5vw;
+}
+
+.invitation-card h5 {
+  font-size: 2vw;
+}
+
+.invitation-card p {
+  font-size: 2vw;
+}
